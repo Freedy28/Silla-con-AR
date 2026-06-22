@@ -937,3 +937,4 @@ https://drive.google.com/file/d/1d4l8v5Vg6cLj1dGBuu0PyLdSsW1pubz8/view?usp=shari
 ##Ejecutables
 
 APK: https://drive.google.com/file/d/1DqngBGvuJOJ6eudTJ1sRemlOlRvvoTBd/view?usp=sharing
+Imagen: https://drive.google.com/file/d/13XmKo-aIm2ihRGWEahuJoJaG_AXRwNtn/view?usp=sharing
