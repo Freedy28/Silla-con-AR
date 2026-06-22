@@ -1,3 +1,78 @@
+
+##Licencias Unity
+# Guía de Licencias de Unity y Publicación en Google Play Store (2026)
+
+Este repositorio contiene una guía detallada en formato `README.md` orientada a desarrolladores independientes, estudiantes y profesionales sobre el estado actual de las licencias de Unity y los costos asociados con la publicación de aplicaciones en la Play Store de Google.
+
+---
+
+## 📋 Índice
+1. [Licencias de Unity](#1-licencias-de-unity)
+2. [Publicación en Google Play Store](#2-publicación-en-google-play-store)
+3. [Requisitos Técnicos Obligatorios (2026)](#3-requisitos-técnicos-obligatorios-2026)
+4. [Preguntas Frecuentes (FAQ)](#4-preguntas-frecuentes-faq)
+
+---
+
+## 1. Licencias de Unity
+
+Tras la eliminación definitiva de la polémica tarifa por instalación (*Runtime Fee*) a finales de 2024, Unity opera bajo un modelo de suscripción anual claro y predecible para este año 2026.
+
+### Tabla Comparativa de Licencias
+
+| Nivel de Licencia | Costo Anual | Límite de Ingresos / Financiación (Anual) | Características Clave |
+| :--- | :--- | :--- | :--- |
+| **Unity Personal** | **Gratis ($0 USD)** | Menos de $200,000 USD | Motor completo. **Sin pantalla de carga obligatoria** ("Made with Unity") desde el lanzamiento de Unity 6. |
+| **Unity Pro** | $2,310 USD / asiento | Obligatorio si superas los $200,000 USD | Soporte premium, acceso al código fuente y versiones de soporte extendido (LTS). |
+| **Unity Enterprise** | Personalizado | Estudios a gran escala | Herramientas avanzadas de automatización y soporte arquitectónico directo del equipo de Unity. |
+| **Unity Industry** | Personalizado | Más de $1,000,000 USD (No videojuegos) | Para aplicaciones industriales, arquitectónicas, médicas o automotrices. |
+
+💡 **Regla de oro para el desarrollador indie:** Mientras tus ingresos brutos o financiamiento total de los últimos 12 meses sean menores a **$200,000 USD**, puedes usar **Unity Personal de forma gratuita**, publicar comercialmente y retener el 100% de tus ganancias sin pagar regalías.
+
+---
+
+## 2. Publicación en Google Play Store
+
+### ¿Es posible subir aplicaciones de manera gratuita?
+**No al 100%.** Aunque puedes desarrollar el juego completo sin gastar un solo centavo en software, la distribución en la plataforma oficial de Google requiere una inversión inicial para abrir la consola de desarrollador.
+
+### Desglose de Costos y Comisiones
+
+1. **Cuota de Registro Inicial ($25 USD):**
+   * Es un **pago único de por vida**.
+   * No es una suscripción anual (a diferencia del programa de Apple que cuesta $99 USD cada año).
+   * Permite crear un perfil de desarrollador y subir un número **ilimitado** de juegos y aplicaciones sin costos adicionales por almacenamiento o actualizaciones.
+
+2. **Comisión por Monetización (Modelo del 15%):**
+   * **Juegos 100% Gratuitos:** Si tu app no tiene anuncios ni compras internas, Google **no te cobrará nada** por las descargas de tus usuarios.
+   * **Juegos de Pago o con Microtransacciones:** Si vendes el juego o incluyes compras integradas (*In-App Purchases*), Google retiene una comisión reducida del **15%** sobre el primer millón de dólares en ingresos anuales. Al superar ese límite, la comisión asciende al 30%.
+
+---
+
+## 3. Requisitos Técnicos Obligatorios (2026)
+
+Para que la consola de Google Play acepte tu archivo compilado desde Unity, debes asegurar el cumplimiento de las siguientes directivas en los *Player Settings*:
+
+* **Target API Level:** Google Play exige como objetivo mínimo **Android 16 (API Level 36)** para nuevos lanzamientos este año.
+* **Formato de Entrega:** Es obligatorio exportar en formato **Android App Bundle (`.aab`)**. Los archivos tradicionales `.apk` ya no se admiten para publicaciones en producción.
+* **Firma de la Aplicación:** Debes generar y configurar un *Keystore* seguro dentro de Unity para firmar digitalmente el paquete antes de subirlo.
+* **Verificación de Identidad:** Google solicita una verificación estricta de identidad para cuentas nuevas (requiere identificación oficial o número D-U-N-S en caso de registrarse como organización).
+
+---
+
+## 4. Preguntas Frecuentes (FAQ)
+
+**¿Unity me cobrará regalías si mi juego se vuelve viral y tiene millones de descargas?**
+No. El *Runtime Fee* está completamente muerto. Solo estás obligado a actualizar a una licencia Pro si el total de tus ingresos de la empresa o financiamiento supera el umbral de los $200k USD anuales.
+
+**¿Puedo publicar mi juego hecho con la licencia Personal y cobrar por él?**
+Sí. Puedes vender tu juego, añadirle anuncios de Unity Ads/AdMob o incluir microtransacciones utilizando la versión gratuita de Unity, siempre y cuando te mantengas debajo del límite de ingresos de la licencia Personal.
+
+**¿Cuánto tarda Google en aprobar mi primera aplicación?**
+El proceso de revisión para cuentas de desarrollador nuevas suele tardar entre **3 y 7 días hábiles** debido a los controles de seguridad e identidad vigentes.
+"""
+
+
 # Silla con AR
 
 Proyecto de **Realidad Aumentada en Unity** que utiliza **Vuforia Engine** para detectar una imagen objetivo (`ImageTarget`) mediante la cámara del dispositivo. Cuando el marcador es reconocido, la aplicación muestra personajes 3D en posiciones predeterminadas y reproduce una animación de sentado.
@@ -855,3 +930,5 @@ La licencia MIT permite usar, copiar, modificar, fusionar, publicar, distribuir 
 ## Resumen técnico corto
 
 Este proyecto es una app AR hecha en Unity con Vuforia. Detecta una imagen objetivo llamada `images`, y al reconocerla ejecuta un evento que activa el script `SentarseAR_Grupo`. Ese script muestra tres personajes 3D, los posiciona en puntos definidos como hijos del `ImageTarget` y dispara una animación de sentado mediante el trigger `SentarTrigger`. La app está orientada a Android y requiere cámara, Vuforia correctamente instalado y los archivos reales descargados con Git LFS.
+#Video de funcionamiento
+https://drive.google.com/file/d/1d4l8v5Vg6cLj1dGBuu0PyLdSsW1pubz8/view?usp=sharing
