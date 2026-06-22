@@ -932,3 +932,8 @@ La licencia MIT permite usar, copiar, modificar, fusionar, publicar, distribuir 
 Este proyecto es una app AR hecha en Unity con Vuforia. Detecta una imagen objetivo llamada `images`, y al reconocerla ejecuta un evento que activa el script `SentarseAR_Grupo`. Ese script muestra tres personajes 3D, los posiciona en puntos definidos como hijos del `ImageTarget` y dispara una animación de sentado mediante el trigger `SentarTrigger`. La app está orientada a Android y requiere cámara, Vuforia correctamente instalado y los archivos reales descargados con Git LFS.
 #Video de funcionamiento
 https://drive.google.com/file/d/1d4l8v5Vg6cLj1dGBuu0PyLdSsW1pubz8/view?usp=sharing
+
+
+##Ejecutables
+
+APK: https://drive.google.com/file/d/1DqngBGvuJOJ6eudTJ1sRemlOlRvvoTBd/view?usp=sharing
